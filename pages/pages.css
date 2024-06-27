@@ -1,0 +1,125 @@
+body {
+  background-color: #f2f2f0;
+  font-family: "Roboto Slab", serif;
+  color: #0d0d0d;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+a {
+  color: #0d0d0d;
+  text-decoration: none;
+}
+
+.white {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blue {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #bde8f1;
+}
+
+/* Style Showcased Projects Section */
+#carousel1,
+#carousel2,
+#carousel3 {
+  width: 60%;
+  border: #819fa7 solid 10px;
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+ul {
+  color: red;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style All Projects Section */
+#grid {
+  display: grid;
+  grid-template-rows: 70%;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.all-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: #819fa7 solid 10px;
+  border-radius: 10%;
+  background-color: #bde8f1;
+  overflow: hidden;
+}
+
+.all-projects > img {
+  height: 80%;
+  width: 100%;
+}
+
+.all-projects > div {
+  width: 100%;
+  border-bottom: #819fa7 solid 10px;
+}
+
+a > svg {
+  color: blue;
+  height: 50px;
+  width: 20px;
+}
+.enlarge-on-hover {
+  transition: transform 0.3s ease;
+}
+
+.enlarge-on-hover:hover {
+  transform: scale(1.1);
+}
+
+.all-projects p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  p {
+    font-size: 15px !important;
+  }
+
+  #grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+  }
+}

@@ -1,0 +1,120 @@
+body {
+  background-color: #f2f2f0;
+  font-family: "Roboto Slab", serif;
+  color: #0d0d0d;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 25px;
+}
+
+/* Style Top-Half of Page */
+#top-half {
+  background-color: #bde8f1;
+  width: 100vw;
+}
+
+#f1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+a {
+  color: #0d0d0d;
+  text-decoration: none;
+}
+
+.button-contents {
+  display: flex;
+  align-items: center;
+}
+
+#images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enlarge-on-hover {
+  transition: transform 0.3s ease;
+}
+
+.enlarge-on-hover:hover {
+  transform: scale(1.1);
+}
+
+#profile-img {
+  width: 350px;
+  height: 350px;
+  border: #819fa7 solid 10px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.network-img {
+  width: 200px;
+  height: 200px;
+  border: #819fa7 solid 10px;
+  background-color: white;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#images > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+}
+
+/* Style Bottom-half */
+#bottom-half {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  p {
+    font-size: 15px !important;
+  }
+
+  #images {
+    flex-direction: column;
+  }
+
+  #profile-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  #network-img {
+    width: 100px;
+    height: 100px;
+  }
+  #first {
+    order: 1;
+  }
+}
